@@ -20,7 +20,7 @@ class Formulario extends React.Component {
 
           <input type="time" step="1" name="tempo" id="inTempo" min="00:00:00" max="01:30:00" />
         </div>
-        <Botao />
+        <Botao nomeBotao = "Adicionar" />
       </form>
     );
   }
