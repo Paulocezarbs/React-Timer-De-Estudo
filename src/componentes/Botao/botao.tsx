@@ -1,12 +1,16 @@
 import style from "./Botao.module.scss"
 
 
+interface Props{
+    nomeBotao: string,
+    type?: "button" | "submit" | "reset" | undefined,
+    onClick?:() => void;
+}
 
-
-function Botao({nomeBotao, type}: {nomeBotao:string, type?: "button" | "submit" | "reset" | undefined}) {
+function Botao({nomeBotao, type, onClick}: Props) {
     const tipo = type?? "button"
     return(
-        <button type={tipo} className={style.botao}> {nomeBotao} </button>
+        <button type={tipo} onClick={onClick} className={style.botao}> {nomeBotao} </button>
     )
 }
 
