@@ -19,5 +19,4 @@ function Relogio({tempo = 0}: Props){
 
     )
 }
-
 export default Relogio;
